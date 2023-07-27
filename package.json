@@ -1,0 +1,47 @@
+{
+  "name": "next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "start": "next start",
+    "cypress": "cypress open",
+    "cypress:headless": "cypress run"
+  },
+  "dependencies": {
+    "iron-session": "^6.2.0",
+    "next": "latest",
+    "octokit": "^2.0.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "swr": "^1.3.0"
+  },
+  "devDependencies": {
+    "cypress": "^12.17.1",
+    "eslint-config-next": "latest"
+  },
+  "renovate": {
+    "extends": [
+      "config:js-app",
+      ":automergePatch",
+      ":automergeBranch",
+      ":automergePatch",
+      ":automergeBranch",
+      ":automergeLinters",
+      ":automergeTesters",
+      ":automergeTypes"
+    ],
+    "timezone": "Europe/Paris",
+    "schedule": [
+      "before 3am on Monday"
+    ]
+  },
+  "description": "This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "main": "cypress.config.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "author": "",
+  "license": "ISC"
+}
